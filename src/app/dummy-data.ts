@@ -1,5 +1,6 @@
 export const fruitlist = [
   {
+    id: 1,
     name: 'Apfel',
     img: 'apple.png',
     description:
@@ -12,6 +13,7 @@ export const fruitlist = [
     ],
   },
   {
+    id: 2,
     name: 'Banane',
     img: 'banana.png',
     description:
@@ -25,6 +27,7 @@ export const fruitlist = [
     ],
   },
   {
+    id: 3,
     name: 'Sauerkirsche',
     img: 'cherry.png',
     description:
@@ -34,6 +37,7 @@ export const fruitlist = [
     reviews: [{ name: 'Horst', text: 'definitiv nicht süß' }],
   },
   {
+    id: 4,
     name: 'Erdbeere',
     img: 'strawberry.png',
     description:
@@ -46,6 +50,7 @@ export const fruitlist = [
     ],
   },
   {
+    id: 5,
     name: 'Zitrone',
     img: 'lemon.png',
     description:
@@ -58,6 +63,7 @@ export const fruitlist = [
     ],
   },
   {
+    id: 6,
     name: 'Orange',
     img: 'orange.png',
     description:
