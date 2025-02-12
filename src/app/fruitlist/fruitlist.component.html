@@ -1,5 +1,5 @@
 <div class="fruitlist_content">
-  @for(fruit of fruits; track fruit.name){
+  @for(fruit of fruits; track fruit.id){
   <section class="singleFruitBox">
     <div>
       <img src="./assets/img/fruits/{{ fruit.img }}" alt="" srcset="" />
@@ -21,7 +21,11 @@
       <div><b>Beschreibung:</b><br />{{ fruit.description }}</div>
       <div>
         <div>
-          <!-- <div><b>{{review.name}}:</b><br>{{review.text}}</div> -->
+          @for(review of fruit.reviews; track review){
+          <div>
+            <b>{{ review.name }}:</b><br />{{ review.text }}
+          </div>
+          } @empty { no comments. }
         </div>
         <div>
           <input type="text" /><button>
