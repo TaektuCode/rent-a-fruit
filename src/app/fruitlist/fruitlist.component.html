@@ -17,7 +17,13 @@
           } @default {
           <img src="./assets/img/stars/star-empty.svg" alt="Empty Star" />
           } } }
-          <p>({{ fruit.stars }})</p>
+          <p
+            [ngStyle]="{
+              color: fruit.stars > 3 ? fontColorPositive : fontColorNegative
+            }"
+          >
+            ({{ fruit.stars }})
+          </p>
         </div>
       </div>
       <div><b>Art:</b><br />{{ fruit.genus }}</div>
