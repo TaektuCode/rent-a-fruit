@@ -11,4 +11,11 @@ import { SinglefruitComponent } from './singlefruit/singlefruit.component';
 })
 export class FruitlistComponent {
   fruits = fruitlist;
+
+  addComment(comment: string, index: number) {
+    this.fruits[index].reviews.push({
+      name: 'Gast',
+      text: comment,
+    });
+  }
 }
